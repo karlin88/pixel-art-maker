@@ -15,10 +15,18 @@ for (i = 1; i <= 40; i ++ ) {
 
     }
 }
-
+var colorDiv = document.getElementsByClassName("paletteColor");
+for (c = 0; c < colorDiv.length; c ++) {
+    colorDiv[c].addEventListener('click', function(event) {
+        var currentColor = this.style.backgroundColor;
+        document.querySelector(".currentColor").style.backgroundColor = currentColor;
+    });
+}
 var ediv = document.getElementsByClassName("griditem");
 for (e = 0; e < ediv.length; e ++) {
     ediv[e].addEventListener('click', function(event) {
-        this.style.backgroundColor = "red";
+        this.style.backgroundColor = document.querySelector(".currentColor").style.backgroundColor;
+        console.log(currentColor);
+        this.style.border = "0px";
     });
 }

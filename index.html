@@ -18,6 +18,7 @@
             height: 400px;
             margin: auto;
             background: white;
+            margin-bottom: 10px;
         }
 
         div.row {
@@ -32,6 +33,21 @@
             border: 1px solid gainsboro;
         }
 
+        div.paletteColor {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            display:inline-block;
+        }
+
+        div.currentColor {
+            width: 80px;
+            height: 30px;
+            margin-bottom: 5px;
+            display:inline-block;        
+        }
+
         body {}
     </style>
 </head>
@@ -43,7 +59,9 @@
         <!-- javascript inserted grid  -->
 
         </div>
-        
+        <div class="paletteColor" style="background-color:red;"></div>
+        <div class="paletteColor" style="background-color:blue;"></div>
+        <div class="currentColor" style="background-color:white;"></div>
     </div>
 
     <script src="pixel-art.js"></script>
