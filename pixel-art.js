@@ -25,8 +25,7 @@ for (c = 0; c < colorDiv.length; c ++) {
 var ediv = document.getElementsByClassName("griditem");
 for (e = 0; e < ediv.length; e ++) {
     ediv[e].addEventListener('click', function(event) {
-        this.style.backgroundColor = document.querySelector(".currentColor").style.backgroundColor;
-        console.log(currentColor);
         this.style.border = "0px";
+        this.style.backgroundColor = document.querySelector(".currentColor").style.backgroundColor;
     });
 }
