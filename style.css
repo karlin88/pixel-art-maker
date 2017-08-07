@@ -28,6 +28,11 @@ div.griditem {
     border: 1px solid gainsboro;
 }
 
+div.palette {
+    background-color: gainsboro;
+    border-radius: 10px;
+}
+
 div.paletteColor {
     border-radius: 50%;
     width: 30px;
