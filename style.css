@@ -1,18 +1,11 @@
-div.pixelart {
-    width: 880px;
-    height: 560px;
-    border-radius: 10px;
-    border: 20px solid gainsboro;
-    background: gainsboro;
-    margin: auto;
-}
-
 div.canvas {
     display: table;
     width: 880px;
     height: 400px;
     margin: auto;
     background: white;
+    border: 20px solid gainsboro;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -31,6 +24,9 @@ div.griditem {
 div.palette {
     background-color: gainsboro;
     border-radius: 10px;
+    width: 880px;
+    border: 20px solid gainsboro;
+    margin: auto;
 }
 
 div.paletteColor {

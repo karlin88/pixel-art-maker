@@ -2,78 +2,76 @@
 <html>
 
 <head>
-	<link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="pixelart">
-        <div class="canvas">
-         
+    <div class="canvas">
+
         <!-- javascript inserted grid  -->
 
-        </div>
-        <div class="palette">
-            <div class="paletteColor" style="background-color:darkred;"></div>
-            <div class="paletteColor" style="background-color:firebrick"></div>
-            <div class="paletteColor" style="background-color:red"></div>
-            <div class="paletteColor" style="background-color:lightpink"></div>        
-            <div class="paletteColor" style="background-color:pink"></div>
-            <div class="paletteColor" style="background-color:orangered"></div>
-            <div class="paletteColor" style="background-color:tomato"></div>
-            <div class="paletteColor" style="background-color:coral"></div>
-            <div class="paletteColor" style="background-color:darkorange"></div>
-            <div class="paletteColor" style="background-color:orange"></div>
-            <div class="paletteColor" style="background-color:gold"></div>
-            <div class="paletteColor" style="background-color:yellow"></div>
-            <div class="paletteColor" style="background-color:khaki"></div>
-            <div class="paletteColor" style="background-color:darkkhaki"></div>
-            <div class="paletteColor" style="background-color:greenyellow"></div>
-            <div class="paletteColor" style="background-color:lime"></div>
-            <div class="paletteColor" style="background-color:limegreen"></div>
-            <div class="paletteColor" style="background-color:springgreen"></div>
-            <div class="paletteColor" style="background-color:seagreen"></div>
-            <div class="paletteColor" style="background-color:green"></div>
-            <div class="paletteColor" style="background-color:darkgreen"></div>
-            <div class="paletteColor" style="background-color:cyan"></div>
-            <div class="paletteColor" style="background-color:blue;"></div>
-            <div class="paletteColor" style="background-color:navy"></div>
-            <div class="paletteColor" style="background-color:indigo"></div>
-            <div class="paletteColor" style="background-color:darkmagenta"></div><br>
-            <div class="paletteColor" style="background-color:black"></div>
-            <div class="paletteColor" style="background-color:dimgray"></div>
-            <div class="paletteColor" style="background-color:grey"></div>
-            <div class="paletteColor" style="background-color:darkgray"></div>
-            <div class="paletteColor" style="background-color:gainsboro; border: 1px solid white;"></div>
-            <div class="paletteColor" style="background-color:white"></div>
-            <div class="paletteColor" style="background-color:brown"></div>
-            <div class="paletteColor" style="background-color:saddlebrown"></div>
-            <div class="paletteColor" style="background-color:sienna"></div>
-            <div class="paletteColor" style="background-color:chocolate"></div>
-            <div class="paletteColor" style="background-color:peru"></div>
-        
-            <br>
-            <div class="inline">
-                <p> 
-                    CURRENT COLOR:
-                </p>
-            </div>
-            <div class="currentColor" style="background-color:white;"></div>
+    </div>
+    <div class="palette">
+        <div class="paletteColor" style="background-color:darkred;"></div>
+        <div class="paletteColor" style="background-color:firebrick"></div>
+        <div class="paletteColor" style="background-color:red"></div>
+        <div class="paletteColor" style="background-color:lightpink"></div>
+        <div class="paletteColor" style="background-color:pink"></div>
+        <div class="paletteColor" style="background-color:orangered"></div>
+        <div class="paletteColor" style="background-color:tomato"></div>
+        <div class="paletteColor" style="background-color:coral"></div>
+        <div class="paletteColor" style="background-color:darkorange"></div>
+        <div class="paletteColor" style="background-color:orange"></div>
+        <div class="paletteColor" style="background-color:gold"></div>
+        <div class="paletteColor" style="background-color:yellow"></div>
+        <div class="paletteColor" style="background-color:khaki"></div>
+        <div class="paletteColor" style="background-color:darkkhaki"></div>
+        <div class="paletteColor" style="background-color:greenyellow"></div>
+        <div class="paletteColor" style="background-color:lime"></div>
+        <div class="paletteColor" style="background-color:limegreen"></div>
+        <div class="paletteColor" style="background-color:springgreen"></div>
+        <div class="paletteColor" style="background-color:seagreen"></div>
+        <div class="paletteColor" style="background-color:green"></div>
+        <div class="paletteColor" style="background-color:darkgreen"></div>
+        <div class="paletteColor" style="background-color:cyan"></div>
+        <div class="paletteColor" style="background-color:blue;"></div>
+        <div class="paletteColor" style="background-color:navy"></div>
+        <div class="paletteColor" style="background-color:indigo"></div>
+        <div class="paletteColor" style="background-color:darkmagenta"></div><br>
+        <div class="paletteColor" style="background-color:black"></div>
+        <div class="paletteColor" style="background-color:dimgray"></div>
+        <div class="paletteColor" style="background-color:grey"></div>
+        <div class="paletteColor" style="background-color:darkgray"></div>
+        <div class="paletteColor" style="background-color:gainsboro; border: 1px solid white;"></div>
+        <div class="paletteColor" style="background-color:white"></div>
+        <div class="paletteColor" style="background-color:brown"></div>
+        <div class="paletteColor" style="background-color:saddlebrown"></div>
+        <div class="paletteColor" style="background-color:sienna"></div>
+        <div class="paletteColor" style="background-color:chocolate"></div>
+        <div class="paletteColor" style="background-color:peru"></div>
 
-            <div class="inline" style="width:205px; margin-left:10px">
-                <p> 
-                    CUSTOM COLOR PICKER:
-                </p>
-            </div>
-            <div class="inline" style="padding-top: 3px;">
-                <input type="color" onchange="updateCurrentColor()">
-            </div>
-            <div class="inline" style="padding-top: 3px; float:right;">
+        <br>
+        <div class="inline">
+            <p>
+                CURRENT COLOR:
+            </p>
+        </div>
+        <div class="currentColor" style="background-color:white;"></div>
+
+        <div class="inline" style="width:205px; margin-left:10px">
+            <p>
+                CUSTOM COLOR PICKER:
+            </p>
+        </div>
+        <div class="inline" style="padding-top: 3px;">
+            <input type="color" onchange="updateCurrentColor()">
+        </div>
+        <div class="inline" style="padding-top: 3px; float:right;">
             <form>
                 <input type="button" value="Save" onclick="Save()">
                 <input type="button" value="Load" onclick="Load()">
                 <input type="button" value="Clear" onclick="Clear()">
             </form>
-            </div>
         </div>
     </div>
 
