@@ -1,0 +1,63 @@
+div.pixelart {
+    width: 880px;
+    height: 560px;
+    border-radius: 10px;
+    border: 20px solid gainsboro;
+    background: gainsboro;
+    margin: auto;
+}
+
+div.canvas {
+    display: table;
+    width: 880px;
+    height: 400px;
+    margin: auto;
+    background: white;
+    margin-bottom: 10px;
+}
+
+div.row {
+    display: table-row-group;
+    width: 10px;
+    border: 1px solid gainsboro;
+} 
+
+div.griditem {
+    display: table-cell;
+    height: 10px;
+    border: 1px solid gainsboro;
+}
+
+div.paletteColor {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    display:inline-block;
+}
+
+div.currentColor {
+    width: 80px;
+    height: 30px;
+    margin-bottom: 5px;
+    display:inline-block;        
+}
+
+div.inline {
+    width: 150px; 
+    height:30px; 
+    display:inline-block; 
+    vertical-align:top; 
+    padding-top: 9px; 
+}
+
+body {
+    background-color: grey;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif; 
+    color:dimgray;
+    font-weight: bold; 
+    display:inline; 
+}
