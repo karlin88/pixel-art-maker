@@ -59,13 +59,20 @@
             </div>
             <div class="currentColor" style="background-color:white;"></div>
 
-            <div class="inline" style="width:220px">
+            <div class="inline" style="width:205px; margin-left:10px">
                 <p> 
                     CUSTOM COLOR PICKER:
                 </p>
             </div>
             <div class="inline" style="padding-top: 3px;">
                 <input type="color" onchange="updateCurrentColor()">
+            </div>
+            <div class="inline" style="padding-top: 3px; float:right;">
+            <form>
+                <input type="button" value="Save" onclick="Save()">
+                <input type="button" value="Load" onclick="Load()">
+                <input type="button" value="Clear" onclick="Clear()">
+            </form>
             </div>
         </div>
     </div>

@@ -57,4 +57,26 @@ for (e = 0; e < ediv.length; e ++) {
     });
 }
 
+//clear canvas
+function Clear() {
+    var clearDiv = document.getElementsByClassName("griditem");
+    for (e = 0; e < clearDiv.length; e ++) {
+        clearDiv[e].removeAttribute("style");
+    }
+}
 
+function Save() {
+    var savefile = document.querySelector(".canvas").children;
+    console.log (document.querySelector(".canvas"))
+    localStorage.setItem("savefile",JSON.stringify(savefile));
+
+}
+
+function Load() {
+    var retrievedObject = localStorage.getItem('savefile');
+    var savefile = JSON.parse(retrievedObject);
+    console.log(savefile);
+    for (i = 0; i < savefile.length; i ++) {
+        document.querySelector(".canvas").appendChild(JSON.parse(savefile[i]));
+    }
+}
